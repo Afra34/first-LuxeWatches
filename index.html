@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="refresh" content="0; url=home.html">
+        
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon.png">    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='20' fill='%23050508'/%3E%3Ctext x='50' y='68' text-anchor='middle' font-size='55' font-family='Arial, sans-serif' fill='%23d4af37' font-weight='bold'%3EL%3C/text%3E%3C/svg%3E">
+    <link rel="apple-touch-icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='20' fill='%23050508'/%3E%3Ctext x='50' y='68' text-anchor='middle' font-size='55' font-family='Arial, sans-serif' fill='%23d4af37' font-weight='bold'%3EL%3C/text%3E%3C/svg%3E">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <title>Luxewatches</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background: #050508;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            font-family: 'Georgia', serif;
+        }
+        .loader {
+            text-align: center;
+            color: #d4af37;
+        }
+        .loader i {
+            font-size: 48px;
+            animation: spin 2s linear infinite;
+        }
+        .loader p {
+            margin-top: 16px;
+            font-size: 18px;
+            letter-spacing: 4px;
+            text-transform: uppercase;
+            opacity: 0.7;
+        }
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+    </style>
+</head>
+<body>
+    <div class="loader">
+        <i class="fas fa-crown"></i>
+        <p>Luxewatches</p>
+    </div>
+    <script>
+        setTimeout(() => {
+            window.location.href = 'home.html';
+        }, 1500);
+    </script>
+</body>
+</html>
